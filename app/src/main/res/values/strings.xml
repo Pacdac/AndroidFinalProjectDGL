@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidProjectDGL</string>
+    <string name="cameraButtonText">Take a photo!</string>
 </resources>
