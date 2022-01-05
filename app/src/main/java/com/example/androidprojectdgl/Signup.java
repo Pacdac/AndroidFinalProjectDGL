@@ -40,9 +40,9 @@ public class Signup extends AppCompatActivity {
             Toast.makeText(Signup.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
         else{
             if(pass.equals(repass)){
-                Boolean checkuser = DB.checkusername(user);
+                Boolean checkuser = DB.checkUsername(user);
                 if(checkuser==false){
-                    Boolean insert = DB.insertData(user, pass);
+                    Boolean insert = DB.insertDataSignUp(user, pass);
                     if(insert==true){
                         Toast.makeText(Signup.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(),MainActivity.class);
